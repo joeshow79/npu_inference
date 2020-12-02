@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch=".." name="origin"/>
+  
+  <default remote="origin" revision="master" sync-j="4"/>
+  
+  <project name="sigmastar/sail/IPU100_driver" path="SRC" revision="10e5026600a1a5bd3f12caac7aca45b9d0c4ad47" upstream="master"/>
+  <project name="sigmastar/sail/IPU_FreeRTOS" path="FreeRTOS" revision="6a223f05885381d42a3629ffe99332ea0abf8c09" upstream="master"/>
+  <project name="sigmastar/sail/IPU_Project" path="Project" revision="36be9823722cf56c5223d422cd14a96b611f1056" upstream="master"/>
+  <project name="sigmastar/sail/SGS_Models" path="SGS_Models" revision="2f42c388d69071ed0a012d1bfb5ceb77057ff70a" upstream="master"/>
+  <project name="sigmastar/sail/SGS_Models_interface" path="Interface" revision="218e88d49bdce4f31e01986d1dbd7748f4c2729f" upstream="master"/>
+</manifest>

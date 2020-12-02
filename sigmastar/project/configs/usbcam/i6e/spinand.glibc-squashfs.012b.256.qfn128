@@ -1,0 +1,24 @@
+CHIP = i6e
+BOARD = 012B
+BOARD_NAME = SSC012B-S01A
+PRODUCT = usbcam
+TOOLCHAIN = glibc
+TOOLCHAIN_VERSION = 9.1.0
+KERNEL_VERSION = 4.9.84
+LIBC       = libc-2.30
+BUSYBOX    = busybox-1.20.2-arm-linux-gnueabihf-glibc-9.1.0-dynamic
+IMAGE_CONFIG = spinand.squashfs.partition.config
+CUSTOMER_OPTIONS = null_options.mk
+CUSTOMER_TAILOR = usbcam_i6e_tailor.mk
+MMAP = MMAP_I6E_256.h
+IQ0 = imx307/imx307_iqfile.bin
+IQ1 = imx307/imx307_iqfile.bin
+IQ2 = imx307/imx307_iqfile.bin
+IQ3 = imx307/imx307_iqfile.bin
+EXBOOTARGS =
+KERNEL_BOOT_ENV = LX_MEM=$(KERNEL_MEMLEN) mma_heap=mma_heap_name0,miu=0,sz=0xA000000 cma=2M
+TOOLCHAIN_REL = arm-linux-gnueabihf-9.1.0-
+SENSOR_LIST = imx274_MIPI.ko imx415_MIPI.ko imx307_MIPI.ko
+SENSOR0 = imx274_MIPI.ko
+SENSOR0_OPT = chmap=1
+FPGA = 0
